@@ -1,9 +1,9 @@
-enum cargo {
+export enum cargo {
     "aluno",
     "professor"
 }
 
-export class user {
+export class User {
     private _id: number;
     private _email: string;
     private _nome: string;
@@ -31,11 +31,11 @@ export class user {
     get autoridade(): cargo { return this._autoridade}
 
     set email(newEmail) {
-        if(!newEmail.includes('@')) return
+        if(!newEmail.includes('@')) throw new Error("sei la")
         this._email = newEmail.trim()
     }
     set nome(newNome: string) {
-        if(newNome.trim() === '') return
+        if(newNome.trim() === '') return;
         this._nome = newNome.trim()
     }
 }
