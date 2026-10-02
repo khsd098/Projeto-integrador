@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <titlet>Voz em Tempo Real</titlet>
+    <meta name="description" content="EduLegendas - legendagem em tempo real para tornar as aulas mais acessíveis.">
+    <title>EduLegendas | Acessibilidade em sala de aula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    
+    <a href="#conteudo" class="skip-link"> Pular para o Conteúdo</a>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="#inicio" class="logo" aria-label="EduLegendas - Página inicial">
+                <div class="logo-icone" aria-hidden="true">EL</div>
+                <div class="logo-texto">
+                    <strong>EduLegendas</strong>
+                    <span>Acessibilidade na educação</span>
+                </div>
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#aula">Aula</a>
+                <a href="#disciplinas">Disciplinas</a>
+                <button id="btnContraste" class="botao-contraste" type="button" aria-pressed="false">Alto contraste</button>
+            </nav>
+        </div>
+
+
+        </div>
+    </header>
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <div class="container hero-conteudo">
+                <div class="hero-texto">
+                    <div class="etiqueta">
+                        <span class="etiqueta-ponto"></span>
+                        ACESSIBILIDADE EM TEMPO REAL
+                    </div>
+                    <h1>
+                        A fala do professor
+                        <span>virando legenda.</span>
+                    </h1>
+                    <p class="hero-descricao">
+                        O <strong>EduLegendas</strong> transforma a fala do professor em texto durante a aula, facilitando o acompanhamento do conteúdo e promovendo uma educação mais acessível.
+                    </p>
+                    <div class="hero-botoes">
+                        <button id="btnIniciar" class="btn btn-principal" type="button">
+                            <span class="icone-microfone">●</span>
+                            Começar uma aula
+                        </button>
+                        <a href="#como-funciona" class="btn btn-secundario">Como funciona</a>
+                    </div>
+                    <div class="hero-informacoes">
+                        <span>✓ Legendas em tempo real</span>
+                        <span>✓ Fonte ajustável</span>
+                        <span>✓ Alto contraste</span>
+                    </div>
+                </div>
+
 </body>
-</html>
