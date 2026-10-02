@@ -26,7 +26,6 @@ export class UserController {
             res.status(400).json({erro : "Nao foi possivel fazer o cadastro"})
         }
     }
-
     public async login(req: Request, res: Response): Promise<void> {
         try{
             const data = await repo.read()
@@ -41,7 +40,7 @@ export class UserController {
             res.status(400).json({erro : "Nao foi possivel fazer login"})
         }
     }
-    public async searchForId(req: Request, res: Response): Promise<void> {
+    public async procurarPorId(req: Request, res: Response): Promise<void> {
         try{
             const data = await repo.read()
             const id = Number(req.params.id)
