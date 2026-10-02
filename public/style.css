@@ -95,10 +95,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s,
-        background 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 .btn:hover {
     transform: translateY(-2px);
@@ -276,4 +273,45 @@ a:focus-visible {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--cor-borda);
 }
+.etiqueta {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 22px;
+    padding: 8px 13px;
+    border: 1px solid rgba(49, 94, 232, 0.18);
+    border-radius: 100px;
+    background:rgba(49, 94, 232, 0.06);
+    color: var(--cor-primaria);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+}
+
+.etiqueta-ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cor-secundaria);
+    box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.12);
+}
+.professor-demo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+}
+.avatar {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background:linear-gradient( 135deg, #e8ecff, #d3dcff);
+    color: var(--cor-primaria);
+    font-weight: 800;
+}
+
+
 
