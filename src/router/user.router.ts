@@ -6,4 +6,5 @@ const controllers = new UserController
 
 router.post("/cadastro", controllers.cadastrar)
 router.post("/login", controllers.login)
-router.get("/usuario/:id", controllers.procurarPorId)
+router.get("/usuario/:id", controllers.procurarPorId) 
+
