@@ -378,6 +378,37 @@ a:focus-visible {
     font-size: 17px;
     line-height: 1.55;
 }
+.como-funciona {
+    padding: 100px 0;
+    background: var(--cor-superficie);
+}
+.titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+
+.titulo-secao > span, .subtitulo {
+    color: var(--cor-primaria);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+
+.titulo-secao h2 {
+    margin: 10px 0 15px;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.titulo-secao p {
+    color: var(--cor-texto-secundario);
+    font-size: 16px;
+}
+
 
 
 
