@@ -408,6 +408,46 @@ a:focus-visible {
     color: var(--cor-texto-secundario);
     font-size: 16px;
 }
+.passos {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+}
+
+.passo {
+    padding: 30px;
+    background: var(--cor-superficie-secundaria);
+    border: 1px solid var(--cor-borda);
+    border-radius: 18px;
+    transition:transform 0.25s,box-shadow 0.25s;
+}
+
+.passo:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra);
+}
+
+.numero-passo {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+    border-radius: 13px;
+    background: rgba(49, 94, 232, 0.09);
+    color: var(--cor-primaria);
+    font-weight: 800;
+}
+
+.passo h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.passo p {
+    color: var(--cor-texto-secundario);
+}
+
 
 
 
