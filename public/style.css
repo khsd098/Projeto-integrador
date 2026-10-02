@@ -312,6 +312,73 @@ a:focus-visible {
     color: var(--cor-primaria);
     font-weight: 800;
 }
+.onda {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-block: 30px;
+}
+.onda span {
+    width: 5px;
+    border-radius: 10px;
+    background:linear-gradient(to top, var(--cor-primaria), #7591f7);
+    animation: onda 1.2s infinite ease-in-out;
+}
+.onda span:nth-child(1) {
+    height: 20px;
+}
+.onda span:nth-child(2) {
+    height: 32px;
+    animation-delay: 0.1s;
+}
+.onda span:nth-child(3) {
+    height: 50px;
+    animation-delay: 0.2s;
+}
+.onda span:nth-child(4) {
+    height: 38px;
+    animation-delay: 0.3s;
+}
+.onda span:nth-child(5) {
+    height: 62px;
+    animation-delay: 0.4s;
+}
+.onda span:nth-child(6) {
+    height: 43px;
+    animation-delay: 0.5s;
+}
+.onda span:nth-child(7) {
+    height: 28px;
+    animation-delay: 0.6s;
+}
+.onda span:nth-child(8) {
+    height: 48px;
+    animation-delay: 0.7s;
+}
+.onda span:nth-child(9) {
+    height: 24px;
+    animation-delay: 0.8s;
+}
+.legenda-demo {
+    padding: 20px;
+    border-radius: 14px;
+    background: var(--cor-legenda);
+    color: white;
+}
+
+.legenda-demo small {
+    display: block;
+    margin-bottom: 8px;
+    color: #9ba8c6;
+    font-weight: 700;
+}
+.legenda-demo p {
+    font-size: 17px;
+    line-height: 1.55;
+}
+
 
 
 
