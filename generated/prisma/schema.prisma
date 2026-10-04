@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// Entidade
+enum Cargo {
+  ALUNO
+  PROFESSOR
+}
+
+// Entidade User
+model User {
+  id         Int    @id @default(autoincrement())
+  email      String @unique
+  nome       String
+  senha      String
+  autoridade Cargo
+
+  // Relacionamento: Um usuário (professor) pode postar vários textos
+  texts Text[]
+}
+
+// Entidade Text
+model Text {
+  id         Int    @id @default(autoincrement())
+  profId     Int
+  texto      String @db.Text
+  data       String
+  disciplina String
+
+  // Configuração do relacionamento com a tabela User usando o profId
+  professor User @relation(fields: [profId], references: [id])
+}
